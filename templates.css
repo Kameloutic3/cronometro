@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    vertical-align: baseline;
+    border: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #231d2b;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+}
+
+.content {
+    flex: 2;
+}
+
+.area-theme {
+    background-image: url('images/pattern-hills.svg');
+    background-position: -925px;
+    background-size: center;
+    background-repeat: no-repeat;
+    flex: 1; 
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+
+.clock {
+    margin-top: 8px;
+    display: flex;
+}
+
+.clock div {
+    text-align: center;
+    margin: 5px;
+}
+
+.horario .temp {
+    font-size: 32px;
+    padding: 13px;
+    color: #d35271;
+    font-weight: 700;
+    background-image: linear-gradient(to bottom, #2c2c44, #32364f);
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.247);
+}
+
+.horario .descri {
+    margin-top: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.rede-sociais {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.rede-sociais .icone {
+    cursor: pointer;
+    margin-top: 10px;
+    position: relative;
+    top: 20px;
+    margin: 8px;
+}
+
+.button-acelerar {
+    display: flex;
+    position: relative;
+    font-size: 18px;
+    top: 50px;
+}
+
+.button {
+    margin-left: 5px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgba(247, 246, 246, 0.692);
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+    .area-theme {
+        background-position: center;
+    }
+
+    .clock  {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        width: 100%;
+    }
+    .clock div {
+        margin: 10px;
+    }
+
+    .horario .temp {
+        font-size: 40px;
+    }
+    .horario .descri {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 700px){
+    .area-theme {
+        background-position: center;
+    }
+
+    .clock  {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        width: 100%;
+    }
+    .clock div {
+        margin: 10px;
+    }
+
+    .horario .temp {
+        font-size: 50px;
+        padding: 15px;
+    }
+    .horario .descri {
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+}
